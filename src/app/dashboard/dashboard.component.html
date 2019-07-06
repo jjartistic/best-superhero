@@ -1,0 +1,18 @@
+<div class="grid-container">
+  <mat-grid-list cols="4" rowHeight="250px">
+    <mat-grid-tile
+        *ngFor="let friend of friends"
+        [colspan]="friend.cols"
+        [rowspan]="friend.rows">
+      <img src="assets/friends/{{friend.name}}.png" />
+
+      <mat-grid-tile-footer>
+        <h1 mat-line><strong>{{friend.name}}</strong></h1> 
+        <span mat-line>{{friend.status}}</span>
+        <button mat-icon-button aria-label="info icon">
+          <mat-icon>info</mat-icon>
+        </button>
+      </mat-grid-tile-footer>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

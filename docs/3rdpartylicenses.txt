@@ -64,6 +64,8 @@ THE SOFTWARE.
 
 @angular/material/core
 
+@angular/material/grid-list
+
 @angular/material/icon
 
 @angular/material/list

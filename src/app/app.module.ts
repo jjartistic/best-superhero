@@ -6,16 +6,18 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatGridListModule, MatCardModule, MatMenuModule } from '@angular/material';
 import { DoctorStrangeComponent } from './doctor-strange/doctor-strange.component';
 import { CaptainMarvelComponent } from './captain-marvel/captain-marvel.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     DoctorStrangeComponent,
-    CaptainMarvelComponent
+    CaptainMarvelComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,10 @@ import { CaptainMarvelComponent } from './captain-marvel/captain-marvel.componen
     MatButtonModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
