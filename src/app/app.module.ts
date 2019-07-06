@@ -7,11 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './menu/menu.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule, MatButtonModule, MatSidenavModule, MatIconModule, MatListModule } from '@angular/material';
+import { DoctorStrangeComponent } from './doctor-strange/doctor-strange.component';
+import { CaptainMarvelComponent } from './captain-marvel/captain-marvel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuComponent
+    MenuComponent,
+    DoctorStrangeComponent,
+    CaptainMarvelComponent
   ],
   imports: [
     BrowserModule,
